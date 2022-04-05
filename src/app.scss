@@ -1,0 +1,120 @@
+
+.App{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    // font-family: 'Josefin Sans', sans-serif;
+    // background-color: aqua;
+
+    .mainApp{
+        flex: 4;
+        background: linear-gradient(to bottom, rgba(0,0,0,0), black ), url('./assets/images/logo.svg');
+        position: relative;
+
+        .gameOver{
+            // width: 100%;
+            // height: 100%;
+            background-color: rgb(255, 187, 0);
+            position: absolute; 
+            top:50% ;
+            left: 50%;
+            width: 300px;
+            height: 150px;
+            margin: -75px 0px 0px -150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 10px;
+
+            .twoButtons{
+                margin-top: 20px;
+                display: flex;
+                flex-direction: row;
+
+                .buttonItem{
+                    margin-left: 10px;
+                    height:40px;
+                    width: 95px;
+                    background-color: red;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+                    border-radius: 10px;
+                }
+            }
+        }
+
+        .top{
+            height: 50%;
+            position:relative;
+
+            .timer{
+                position: absolute;
+                bottom: 0;
+                left: 40px;
+                // background-color: chocolate;
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: 900;
+                font-size: 30px;
+                border: 5px solid white;
+                color: white;
+            }
+        }
+
+        .bottom{
+            height: 50%;
+        }
+    }
+
+    .pyramid{
+        flex: 1;
+        background-color: rgb(98, 0, 255);
+        // display: flex;
+        // align-items: center;
+        // justify-content: space-around;
+        // flex-direction: column;
+        list-style: none;
+        padding: 20px;
+
+        .pyramidListItem{
+        // background-color: rgb(253, 250, 78);
+        // margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 20px;
+        font-weight: 900;
+        display: flex;
+        align-items: center;
+        // justify-content: space-around;
+        padding: 5px;
+        border-radius: 7px;
+        cursor: pointer;
+
+        &.active{
+            background-color: rgb(119, 252, 57);
+        }
+
+        .pyramidListItemId{
+            font-size: 18px;
+            font-weight: 500;
+            width: 20px;
+            //setting the width will prevent distortions in the pyramid list amount. Because if margin is used to push the latter...
+            // background-color: blue;
+        }
+
+        .pyramidListItemAmount{
+            // display: flex;
+            margin-left: 45px;
+            // align-self: center;
+            // justify-self: center;
+        }
+
+        }
+    }
+}

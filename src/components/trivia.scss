@@ -1,0 +1,83 @@
+.trivia{
+    // width: 100%;
+    height: 100%;
+    // color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    background-color: orange;
+    // justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+    .question{
+        width: 80%;
+        // display: flex;
+        text-align: center;
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 10px;
+        background: linear-gradient(rgb(57, 29, 94), rgb(0, 0, 0), );
+    }
+
+    .answers{
+        width: 100%;
+        display: flex;
+        // flex-direction: column;
+        // justify-content:space-evenly;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .answer{
+            width: 40%;
+            border: 1px solid white;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 40px;
+            background: linear-gradient(to bottom, rgba(0,0,0,0), black );
+            cursor: pointer;
+            margin: 8px;
+            pointer-events: true;
+            //the above prevents multiple touches if set to none.
+
+            &:hover, &.active{
+                background: mediumblue;
+            }
+
+            &.correct{
+                animation: correct 1s ease forwards; 
+            }
+
+            @keyframes correct {
+                0%, 22%, 42% {
+                    background: mediumblue;
+                }
+                20%, 40%, 60% {
+                    background: linear-gradient(to bottom, rgba(224, 90, 90, 0), black );
+                }
+                62%, 100%{
+                    background: lime;
+                }
+            }
+
+            &.wrong{
+                animation: wrong 1s ease forwards; 
+            }
+
+            @keyframes wrong {
+                0%, 22%, 42% {
+                    background: mediumblue;
+                }
+                20%, 40%, 60%{
+                    background: linear-gradient(to bottom, rgba(224, 90, 90, 0), black );
+                }
+                62%, 100%{
+                    background: crimson;
+                }
+            }
+
+        }     
+    }
+}
