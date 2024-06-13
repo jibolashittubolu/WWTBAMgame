@@ -5,7 +5,7 @@ It would be moved to Vite in the future.
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run:-
 
 ### `npm start`
 
