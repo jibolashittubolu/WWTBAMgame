@@ -4,7 +4,6 @@ function Timer(props) {
     // if an option is clicked, i should get an additional 2 secs before it hits 0 and game over
     const [timer, settimer] = useState(5)
     const [timer2, settimer2] = useState(8)
-
     // the
     const [clicked, setClicked] = useState(true)
     const {propsetstop, propquestionNumber, propsetquestionNumber, propselectedAnswer, propsetselectedAnswer } = props
