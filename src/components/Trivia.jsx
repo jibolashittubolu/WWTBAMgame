@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './trivia.scss'
 import useSound  from 'use-sound'
 
+
 import correctanswer from '../assets/sound/correctanswer.mp3'
 import wronganswer from '../assets/sound/wronganswer.mp3'
 
