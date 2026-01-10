@@ -7,7 +7,6 @@ import Trivia from './components/Trivia';
 import Timer from './components/Timer';
 import Start from './components/Start';
 import useSound  from 'use-sound'
-
 import commercialbreak from './assets/sound/commercialbreak.mp3'
 import wronganswer from './assets/sound/wronganswer.mp3'
 import correctanswer from './assets/sound/correctanswer.mp3'
