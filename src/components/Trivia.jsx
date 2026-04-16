@@ -4,6 +4,7 @@ import useSound  from 'use-sound'
 import correctanswer from '../assets/sound/correctanswer.mp3'
 import wronganswer from '../assets/sound/wronganswer.mp3'
 
+
 function Trivia(props) {
     const data = [
         {
