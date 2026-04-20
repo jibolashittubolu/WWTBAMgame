@@ -5,7 +5,6 @@ import Trivia from './components/Trivia';
 // import { useState, useMemo } from 'react/cjs/react.development';
 import Timer from './components/Timer';
 import Start from './components/Start';
-
 import useSound  from 'use-sound'
 import commercialbreak from './assets/sound/commercialbreak.mp3'
 import wronganswer from './assets/sound/wronganswer.mp3'
